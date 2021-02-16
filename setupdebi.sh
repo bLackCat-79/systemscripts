@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "This script will prepare your Debian install run as a server and install the common tools"
-apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get install wget git curl open-vm-tools vim-* net-tools sudo screen toilet figlet boxes cowsay fortune ruby unzip -y && apt-get autoremove -y
+apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get install wget git curl open-vm-tools vim-* net-tools sudo screen toilet figlet boxes cowsay fortune ruby unzip gnupg2 apt-transport-https ssl-cert -y && apt-get autoremove -y
 
 DIR="/opt/fun/lolcat-master/"
 if [ -d "$DIR" ]; then
