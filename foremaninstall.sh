@@ -25,3 +25,6 @@ echo "deb http://deb.theforeman.org/ plugins 2.4" | sudo tee -a /etc/apt/sources
 wget -q https://deb.theforeman.org/pubkey.gpg -O- | sudo apt-key add -
 apt-get update && apt-get upgrade -y
 apt-get install foreman-installer -y
+foreman-installer --enable-foreman --enable-foreman-proxy --enable-puppet --enable-foreman-plugin-ansible --enable-foreman-plugin-bootdisk --enable-foreman-plugin-chef --enable-foreman-plugin-dhcp-browser --enable-foreman-plugin-discovery --enable-foreman-plugin-monitoring --enable-foreman-plugin-setup --enable-foreman-compute-vmware
+apt-get install certbot python-certbot-apache
+

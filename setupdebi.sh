@@ -16,4 +16,5 @@ else
   cd lolcat-master/bin
   gem install lolcat
 fi
+usermod -aG sudo drwho
 toilet -f ivrit 'System Installed' | boxes -d cat -a hc -p h8 | lolcat
